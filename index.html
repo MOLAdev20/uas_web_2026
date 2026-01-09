@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Semarak Bakery — Toko Roti Harian</title>
+
+    <!-- Bootstrap 5.3.8 (latest) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#top">Azzuhrie Bakery</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navOffcanvas"
+          aria-controls="navOffcanvas"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cara-pesan">Cara Pesan</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas (mobile menu) -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="navOffcanvas"
+      aria-labelledby="navOffcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="navOffcanvasLabel">Azzuhrie Bakery</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="list-group">
+          <a
+            class="list-group-item list-group-item-action"
+            href="#produk"
+            data-bs-dismiss="offcanvas"
+            >Produk</a
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            href="#cara-pesan"
+            data-bs-dismiss="offcanvas"
+            >Cara Pesan</a
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            href="#faq"
+            data-bs-dismiss="offcanvas"
+            >FAQ</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <header id="top" style="background-color: #e8f9ff" class="text-dark">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-7">
+            <h1 class="display-5 fw-bold mb-3">
+              Butuh yang sat-set untuk sarapan? <br />Azzuhrie Bakery solusinya
+            </h1>
+            <p class="lead text-dark-50 mb-4">
+              Toko roti dengan
+              <span class="fw-semibold text-dark">varian lengkap</span> dan
+              kualitas terbaik. Silahkan lakukan pemesanan melalui Whatsapp kami
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a
+                class="btn btn-success btn-lg"
+                href="https://wa.me/6283140318095?text=Halo%20Semarak%20Bakery!%20Saya%20mau%20tanya%20stok%20dan%20jadwal%20pengantaran."
+                target="_blank"
+                rel="noopener"
+              >
+                Pesan roti melalui WhatsApp
+              </a>
+            </div>
+
+            <div class="row g-2 mt-4">
+              <div class="col-12 col-md-4">
+                <div
+                  class="p-3 bg-primary bg-opacity-25 rounded-3 border border-white border-opacity-10"
+                >
+                  <div class="fw-semibold">Buka</div>
+                  <div class="text-dark-50">07.00 - 21.00</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div
+                  class="p-3 bg-primary bg-opacity-25 rounded-3 border border-white border-opacity-10"
+                >
+                  <div class="fw-semibold">Kirim</div>
+                  <div class="text-dark-50">Same-day (area tertentu)</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div
+                  class="p-3 bg-primary bg-opacity-25 rounded-3 border border-white border-opacity-10"
+                >
+                  <div class="fw-semibold">Bayar</div>
+                  <div class="text-dark-50">Transfer / COD</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured (6 produk depan) -->
+    <section id="featured" class="py-5">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-end justify-content-between gap-2 mb-4"
+        >
+          <div>
+            <h2 class="fw-bold mb-1">Best Seller (6 item)</h2>
+            <p class="text-body-secondary mb-0">
+              Yang paling sering diorder. Klik untuk pesan via WhatsApp.
+            </p>
+          </div>
+          <a class="btn btn-outline-secondary" href="./all.html"
+            >Lihat semua produk</a
+          >
+        </div>
+
+        <div class="row g-4">
+          <!-- Card template -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="ratio ratio-4x3 bg-body-tertiary">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="./assets/tawar-susu.png" width="100%" />
+                </div>
+              </div>
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-2"
+                >
+                  <h3 class="h5 fw-bold mb-1">Roti Tawar Susu</h3>
+                  <span class="badge text-bg-warning">Laris</span>
+                </div>
+                <p class="text-body-secondary mb-3">
+                  Empuk, wangi susu, cocok buat toast & sandwich.
+                </p>
+                <div class="">
+                  <div class="fw-bold">Rp 18.000</div>
+                  <a
+                    class="btn btn-success mt-2 w-100"
+                    href="https://wa.me/6283140318095?text=Halo%20Semarak%20Bakery!%20Saya%20mau%20order%20Roti%20Tawar%20Susu%20(1%20pcs).%20Jumlah%3A%20%0ANama%3A%20%0AAlamat%3A%20%0AJam%20kirim%2Fambil%3A%20"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="ratio ratio-4x3 bg-body-tertiary">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="./assets/tawar-gandum.png" width="100%" />
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-1">Roti Gandum</h3>
+                <p class="text-body-secondary mb-3">
+                  Gandum yang membuat kenyang lebih lama.
+                </p>
+                <div class="">
+                  <div class="fw-bold">Rp 20.000</div>
+                  <a
+                    class="btn btn-success mt-2 w-100"
+                    href="https://wa.me/6283140318095?text=Halo%20Semarak%20Bakery!%20Saya%20mau%20order%20Roti%20Gandum%20(1%20pcs).%20Jumlah%3A%20%0ANama%3A%20%0AAlamat%3A%20%0AJam%20kirim%2Fambil%3A%20"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="ratio ratio-4x3 bg-body-tertiary overflow-hidden">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="./assets/sobek-coklat.png" width="100%" />
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-1">Roti Sobek Cokelat</h3>
+                <p class="text-body-secondary mb-3">
+                  Isian cokelat lumer enak dan gurih.
+                </p>
+                <div class="">
+                  <div class="fw-bold">Rp 16.000</div>
+                  <a
+                    class="btn btn-success mt-2 w-100"
+                    href="https://wa.me/6283140318095?text=Halo%20Semarak%20Bakery!%20Saya%20mau%20order%20Roti%20Sobek%20Cokelat%20(1%20pcs).%20Jumlah%3A%20%0ANama%3A%20%0AAlamat%3A%20%0AJam%20kirim%2Fambil%3A%20"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="ratio ratio-4x3 bg-body-tertiary">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="./assets/sobek-keju.png" width="100%" />
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-1">Roti Keju</h3>
+                <p class="text-body-secondary mb-3">
+                  Gurih kejunya nendang, topping melimpah.
+                </p>
+                <div class="">
+                  <div class="fw-bold">Rp 17.000</div>
+                  <a
+                    class="btn btn-success mt-2 w-100"
+                    href="https://wa.me/6283140318095?text=Halo%20Semarak%20Bakery!%20Saya%20mau%20order%20Roti%20Keju%20(1%20pcs).%20Jumlah%3A%20%0ANama%3A%20%0AAlamat%3A%20%0AJam%20kirim%2Fambil%3A%20"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="ratio ratio-4x3 bg-body-tertiary">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="./assets/sosis-mayo.png" width="100%" />
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-1">Roti Sosis Mayo</h3>
+                <p class="text-body-secondary mb-3">
+                  Sosis + mayo creamy, favorit buat bekal.
+                </p>
+                <div class="">
+                  <div class="fw-bold">Rp 19.000</div>
+                  <a
+                    class="btn btn-success mt-2 w-100"
+                    href="https://wa.me/6283140318095?text=Halo%20Semarak%20Bakery!%20Saya%20mau%20order%20Roti%20Sosis%20Mayo%20(1%20pcs).%20Jumlah%3A%20%0ANama%3A%20%0AAlamat%3A%20%0AJam%20kirim%2Fambil%3A%20"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="ratio ratio-4x3 bg-body-tertiary">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="./assets/abon-pedas.png" width="100%" />
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-1">Roti Abon Pedas</h3>
+                <p class="text-body-secondary mb-3">
+                  Abon gurih + pedasnya nagih (level medium).
+                </p>
+                <div class="">
+                  <div class="fw-bold">Rp 19.000</div>
+                  <a
+                    class="btn btn-success mt-2 w-100"
+                    href="https://wa.me/6283140318095?text=Halo%20Semarak%20Bakery!%20Saya%20mau%20order%20Roti%20Abon%20Pedas%20(1%20pcs).%20Jumlah%3A%20%0ANama%3A%20%0AAlamat%3A%20%0AJam%20kirim%2Fambil%3A%20"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+    </section>
+
+    <!-- Cara Pesan -->
+    <section id="cara-pesan" class="py-5">
+      <div class="container">
+        <div class="row align-items-end g-3 mb-4">
+          <div class="col-12 col-lg-8">
+            <h2 class="fw-bold mb-1">Cara Pesan</h2>
+            <p class="text-body-secondary mb-0">
+              Gampang: pilih roti → klik pesan → chat WhatsApp kebuka.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="h1 mb-2">1</div>
+                <h3 class="h5 fw-bold">Pilih roti</h3>
+                <p class="text-body-secondary mb-0">
+                  Lihat Best Seller atau menu lainnya (total 12).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="h1 mb-2">2</div>
+                <h3 class="h5 fw-bold">Klik “Pesan”</h3>
+                <p class="text-body-secondary mb-0">
+                  WhatsApp kebuka dengan template pesan otomatis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="h1 mb-2">3</div>
+                <h3 class="h5 fw-bold">Konfirmasi</h3>
+                <p class="text-body-secondary mb-0">
+                  Atur jumlah, alamat, jam kirim/ambil, lalu beres.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-info mt-4 mb-0" role="alert">
+          <h5>Tidak menemukan roti yang kamu mau?</h5>
+          order manual dengan klik
+          <span class="fw-semibold">Tombol Whatsapp dibawah ini</span>.
+          <div>
+            <a
+              class="btn btn-success mt-2 btn-lg"
+              href="https://wa.me/6283140318095?text=Halo%20Semarak%20Bakery!%20Saya%20mau%20order.%20Nama%3A%20%0AAlamat%3A%20%0AJam%20kirim%2Fambil%3A%20%0AList%20roti%3A%20"
+              target="_blank"
+              rel="noopener"
+            >
+              Hubungi Kami
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5 bg-body-tertiary border-top">
+      <div class="container">
+        <h2 class="fw-bold mb-4">FAQ</h2>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1"
+              >
+                Bisa request varian lain?
+              </button>
+            </h2>
+            <div
+              id="faq1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-body-secondary">
+                Untuk sekarang menunya dibatasi
+                <span class="fw-semibold">12 roti</span> biar stok & kualitas
+                konsisten. Tapi kamu bisa request topping/level pedas (kalau
+                ada).
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2"
+              >
+                Bisa dikirim hari ini?
+              </button>
+            </h2>
+            <div
+              id="faq2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-body-secondary">
+                Bisa, tergantung jam order & area pengantaran. Chat aja buat
+                cek.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3"
+              >
+                Pembayaran apa aja?
+              </button>
+            </h2>
+            <div
+              id="faq3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-body-secondary">
+                Transfer / COD (sesuai area). Detailnya dikonfirmasi via
+                WhatsApp.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row g-3 align-items-center">
+          <div class="col-12 col-md">
+            <div class="fw-bold">Azzuhrie Bakery</div>
+            <div class="text-body-secondary small">
+              © <span id="year">2026</span> | Sabiilul Hikam Azzuhrie |
+              231011400198
+            </div>
+          </div>
+          <div class="col-12 col-md-auto">
+            <a class="btn btn-outline-secondary" href="#top">Balik ke atas</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
